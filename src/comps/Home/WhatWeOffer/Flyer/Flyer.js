@@ -9,7 +9,7 @@ const Flyer = () => {
                 
             </div>
             <div className="flyer-card">
-                <h1>Name of the Item that we offer(FLYERS)</h1>
+                <h1>FLYERS</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quibusdam? A brief description of that particular item that we offer.</p>
                 <Button path='./catalogue' label='Learn More'/>
             </div>

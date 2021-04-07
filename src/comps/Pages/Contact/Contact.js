@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import './Contact.css'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
     useEffect(() => {
@@ -16,7 +17,7 @@ const Contact = () => {
                     <li className='contact-list-item'>+263 773 444 543</li>
                 </ul>
                 <h1 className="contact-details-header">Email</h1>
-                <a href="https://google.com" target='_blank' className="contact-list-item email-link">king@web.com</a>
+                <a href="https://google.com" target='_blank' className="contact-list-item email-link">loveckyAds@web.com</a>
             </div>
         </div>
     )
