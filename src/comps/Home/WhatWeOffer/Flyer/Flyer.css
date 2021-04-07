@@ -1,0 +1,45 @@
+.flyer-section {
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.flyer-card {
+    text-align: center;
+}
+
+.flyer-card h1,p {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.flyer-img {
+    height: 50vh;
+    width: 80%;
+    border-radius: 10px;
+    margin-right: 70px;
+    background-color: red;
+    padding: 30px;
+    position: relative;
+    background: url(../../../../images/images/Flyers/flyer1.jpg) no-repeat center/cover;
+}
+
+.flyer-card p {
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 80px;
+}
+
+.flyer-card h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+@media screen and (max-width: 768px) {
+    .flyer-img{
+        display: none;
+    }
+}

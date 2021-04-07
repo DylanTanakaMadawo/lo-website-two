@@ -1,0 +1,36 @@
+.flyer-container {
+    height: 120vh;
+    /* width: 100%; */
+    /* margin: 50px 300px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flyer-button {
+    margin-top: 45px;
+}
+.flyer-header {
+    margin-bottom: 30px;
+}
+
+.carousel {
+    /* border-radius: 3px; */
+    display: flex;
+    justify-content: center;
+}
+
+.carousel .slide {
+    height: 50vh;
+}
+.carousel .slide img {
+    max-height: 100%;
+    width: auto;
+}
+
+.flyer-images {
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}

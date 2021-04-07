@@ -1,0 +1,46 @@
+.banner-section {
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.banner-card {
+    text-align: center;
+}
+
+.banner-card h1,p {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.banner-img {
+    height: 50vh;
+    width: 80%;
+    border-radius: 10px;
+    margin-left: 70px;
+    background-color: red;
+    padding: 30px;
+    position: relative;
+    background: url(../../../../images/images/Banners/banner1.jpg) no-repeat center/cover;
+}
+
+.banner-card p {
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 80px;
+}
+
+.banner-card h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+    .banner-img{
+        display: none;
+    }
+}

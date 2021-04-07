@@ -1,0 +1,28 @@
+.hero-section {
+    height: 100vh;
+    background: url(../../../images/images/Home/heropaper.jpg) no-repeat center/cover;
+}
+
+.hero-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.hero-header {
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 50px;
+}
+.hero-text {
+    margin-top: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 20px;
+}
