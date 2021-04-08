@@ -1,33 +1,35 @@
 import React from 'react'
-import './AllCatalogue.css'
+import card1 from '../../../../../images/images/BusCards/card1.jpg'
+import card2 from '../../../../../images/images/BusCards/card2.jpg'
+import card3 from '../../../../../images/images/BusCards/card3.jpg'
+import './Cards.css'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
-import banner1 from '../../../../images/images/Banners/banner1.jpg'
-import Button from '../../../Button/Button'
+import Button from '../../../../Button/Button'
 
-const AllCatalogue = () => {
+const Cards = () => {
     return (
-        <div className='all-catalogues'>
-            <h1 className='header'>Containing the header</h1>
+        <div className='all-cards'>
+            <h1 className='header'>BUSINESS CARDS DESIGN</h1>
             <div className="carousel-container">
                 <Carousel infiniteLoop autoPlay>
                     <div className="image">
                         <img 
-                            src={banner1} 
+                            src={card1} 
                             alt="" 
                             className='carousel-image-container'
                         />
                     </div>
                     <div className="image">
                         <img 
-                            src={banner1} 
+                            src={card2} 
                             alt="" 
                             className='carousel-image-container'
                         />
                     </div>
                     <div className="image">
                         <img 
-                            src={banner1} 
+                            src={card3} 
                             alt="" 
                             className='carousel-image-container'
                         />
@@ -39,4 +41,4 @@ const AllCatalogue = () => {
     )
 }
 
-export default AllCatalogue
+export default Cards

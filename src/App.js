@@ -9,6 +9,10 @@ import Footer from './comps/Footer/Footer'
 import Contact from './comps/Pages/Contact/Contact'
 import Catalogue from './comps/Pages/Catalogue/Catalogue'
 import NewNavbar from './comps/NewNavbar/NewNavbar'
+import Banners from './comps/Pages/Catalogue/AllCatalogue/Banners/Banners'
+import Flyers from './comps/Pages/Catalogue/AllCatalogue/Flyers/Flyers'
+import Cards from './comps/Pages/Catalogue/AllCatalogue/Cards/Cards'
+import Logos from './comps/Pages/Catalogue/AllCatalogue/Logos/Logos'
 
 const App = () => {
   return (
@@ -32,6 +36,24 @@ const App = () => {
 
         <Route path='/contact'>
           <Contact />
+        </Route>
+
+        {/* PAGEES ROUTES */}
+
+        <Route path='/banners'>
+          <Banners />
+        </Route>
+
+        <Route path='/flyers'>
+          <Flyers />
+        </Route>
+
+        <Route path='/cards'>
+          <Cards />
+        </Route>
+
+        <Route path='/logos'>
+          <Logos />
         </Route>
 
       </Switch>
