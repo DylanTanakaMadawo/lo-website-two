@@ -10,9 +10,9 @@ const Banner = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quibusdam? A brief description of that particular item that we offer.</p>
                 <Button path='./catalogue' label='Learn More'/>
             </div>
-            <div className="banner-img">
+            {/* <div className="banner-img">
             
-            </div>
+            </div> */}
         </div>
     )
 }

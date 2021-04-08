@@ -42,4 +42,13 @@
     .logo-img{
         display: none;
     }
+    .logo-card h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    .logo-card p {
+        font-size: 20px;
+        line-height: 25px;
+    }
 }
