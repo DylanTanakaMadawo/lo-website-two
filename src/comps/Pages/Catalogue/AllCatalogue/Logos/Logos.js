@@ -8,6 +8,9 @@ import { Carousel } from 'react-responsive-carousel'
 import Button from '../../../../Button/Button'
 
 const Logos = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <div className='all-logos'>
             <h1 className='header'>BUSINESS / PERSONAL LOGO DESIGNS</h1>

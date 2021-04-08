@@ -8,6 +8,9 @@ import { Carousel } from 'react-responsive-carousel'
 import Button from '../../../../Button/Button'
 
 const Cards = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <div className='all-cards'>
             <h1 className='header'>BUSINESS CARDS DESIGN</h1>

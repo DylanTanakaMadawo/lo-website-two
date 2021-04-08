@@ -8,6 +8,9 @@ import { Carousel } from 'react-responsive-carousel'
 import Button from '../../../../Button/Button'
 
 const Banners = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <div className='all-banner'>
             <h1 className='header'>X FRAME & PULL UP BANNERS</h1>

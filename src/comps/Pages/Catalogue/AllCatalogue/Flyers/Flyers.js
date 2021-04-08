@@ -8,6 +8,9 @@ import { Carousel } from 'react-responsive-carousel'
 import Button from '../../../../Button/Button'
 
 const Flyers = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <div className='all-flyer'>
             <h1 className='header'>FLYERS</h1>
