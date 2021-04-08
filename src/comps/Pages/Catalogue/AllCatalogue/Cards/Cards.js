@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import card1 from '../../../../../images/images/BusCards/card1.jpg'
 import card2 from '../../../../../images/images/BusCards/card2.jpg'
 import card3 from '../../../../../images/images/BusCards/card3.jpg'

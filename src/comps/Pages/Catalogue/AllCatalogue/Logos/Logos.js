@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import logo1 from '../../../../../images/images/Logos/logo1.jpg'
 import logo2 from '../../../../../images/images/Logos/logo2.png'
 import logo3 from '../../../../../images/images/Logos/logo3.png'

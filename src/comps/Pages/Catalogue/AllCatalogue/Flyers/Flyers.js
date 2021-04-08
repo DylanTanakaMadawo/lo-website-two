@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import flyer1 from '../../../../../images/images/Flyers/flyer1.jpg'
 import flyer2 from '../../../../../images/images/Flyers/flyer2.jpg'
 import flyer3 from '../../../../../images/images/Flyers/flyer3.jpg'
