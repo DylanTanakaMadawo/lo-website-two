@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Hero2.css'
-import hero1 from '../../../images/images/Home/hero1.jpg'
+// import hero1 from '../../../images/images/Home/hero1.jpg'
 
 const Hero2 = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <div className="hero-section">
             <div className='hero-container'>

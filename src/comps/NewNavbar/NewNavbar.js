@@ -9,6 +9,7 @@ import Dropdown from '../Pages/Catalogue/Dropdown/Dropdown'
 const NewNavbar = () => {
     const [click, setClick] = useState(false)
     const [dropdown, setDropdown] = useState(false)
+    // const [open, setOpen] = useState(false)
 
     const onClick = () => {
         window.innerWidth < 960 ? setDropdown(false) : setDropdown(true)
@@ -20,6 +21,10 @@ const NewNavbar = () => {
     const handleClick = () => setDropdown(!dropdown)
 
     const burgerClick = () => setClick(!click)
+
+    const closeMobile = () => {
+        setClick(false)
+    }
     return (
         <div className='nav-bar'>
             
@@ -32,11 +37,12 @@ const NewNavbar = () => {
                 </Link>
             </div>
 
-            <ul className="nav-links-container">
+            <ul className={click ? 'nav-links-container active' : 'nav-links-container'}>
                 <li>
                     <Link 
                         to='/' 
                         className='nav-links'
+                        onClick={closeMobile}
                     >
                         Home 
                     </Link>
@@ -50,6 +56,7 @@ const NewNavbar = () => {
                     <Link 
                         // to='/catalogue' 
                         className='nav-links'
+                        // onClick={closeMobile}
                         
                     >
                         Catalogue <i className='fas fa-caret-down' />
@@ -61,6 +68,7 @@ const NewNavbar = () => {
                     <Link 
                         to='/contact' 
                         className='nav-links'
+                        onClick={closeMobile}
                     >
                         Contact Us
                     </Link>
