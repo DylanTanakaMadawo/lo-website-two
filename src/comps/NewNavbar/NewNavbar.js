@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import {FaBars, FaTimes} from 'react-icons/fa'
 import mainlogo from '../../images/images/Logos/mainlogo.png'
@@ -25,7 +25,11 @@ const NewNavbar = () => {
     const closeMobile = () => {
         setClick(false)
     }
+    useEffect(() => {
+        window.scrollTo(0, 0)
+        }, [])
     return (
+        
         <div className='nav-bar'>
             
             <div className="nav-logo">
