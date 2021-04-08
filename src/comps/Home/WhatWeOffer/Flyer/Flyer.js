@@ -13,7 +13,7 @@ const Flyer = () => {
             <div className="flyer-card">
                 <h1>FLYERS</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quibusdam? A brief description of that particular item that we offer.</p>
-                <Button path='./catalogue' label='Learn More'/>
+                <Button path='./flyers' label='Learn More'/>
             </div>
         </div>
     )

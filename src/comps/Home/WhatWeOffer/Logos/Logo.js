@@ -13,7 +13,7 @@ const Logo = () => {
             <div className="logo-card">
                 <h1>BUSINESS / PERSONAL LOGO DESIGNS</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quibusdam? A brief description of that particular item that we offer.</p>
-                <Button path='./catalogue' label='Learn More'/>
+                <Button path='./logos' label='Learn More'/>
             </div>
         </div>
     )
