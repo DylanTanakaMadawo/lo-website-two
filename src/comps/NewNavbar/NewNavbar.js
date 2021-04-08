@@ -1,11 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import {FaBars, FaTimes} from 'react-icons/fa'
 import mainlogo from '../../images/images/Logos/mainlogo.png'
 import './NewNavbar.css'
+import Dropdown from '../Pages/Catalogue/Dropdown/Dropdown'
 
 
 const NewNavbar = () => {
+    const [click, setClick] = useState(false)
+    const [dropdown, setDropdown] = useState(false)
 
+    const onClick = () => {
+        window.innerWidth < 960 ? setDropdown(false) : setDropdown(true)
+    }
+
+    const onMouseLeave = () => setDropdown(false)
+
+    // const handleClick = () => setClick(false)
+    const handleClick = () => setDropdown(!dropdown)
+
+    const burgerClick = () => setClick(!click)
     return (
         <div className='nav-bar'>
             
@@ -18,19 +32,43 @@ const NewNavbar = () => {
                 </Link>
             </div>
 
-            <div className="nav-links-container">
-                <Link 
-                    to='/' 
-                    className='nav-links'>Home
-                </Link>
-                <Link 
-                    to='/catalogue' 
-                    className='nav-links'>Catalogue
-                </Link>
-                <Link 
-                    to='/contact' 
-                    className='nav-links'>Contact Us
-                </Link>
+            <ul className="nav-links-container">
+                <li>
+                    <Link 
+                        to='/' 
+                        className='nav-links'
+                    >
+                        Home 
+                    </Link>
+                </li>
+
+                <li 
+                    onClick={onClick} 
+                    onClick={handleClick}
+                    // onMouseLeave={onMouseLeave}
+                >
+                    <Link 
+                        // to='/catalogue' 
+                        className='nav-links'
+                        
+                    >
+                        Catalogue <i className='fas fa-caret-down' />
+                    </Link>
+                    {dropdown && <Dropdown />}
+                </li>
+                
+                <li>
+                    <Link 
+                        to='/contact' 
+                        className='nav-links'
+                    >
+                        Contact Us
+                    </Link>
+                </li>
+
+            </ul>
+            <div className="burger" onClick={burgerClick}>
+                {click ? <FaTimes /> : <FaBars />}
             </div>
 
         </div>
