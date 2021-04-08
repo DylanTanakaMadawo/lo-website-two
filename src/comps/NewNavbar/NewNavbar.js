@@ -33,7 +33,7 @@ const NewNavbar = () => {
                     <img src={mainlogo} alt="website logo"/>
                 </Link>
                 <Link to='/' className='logo-link'>
-                    <h1>KING</h1>
+                    <h1>LOVECKYADS</h1>
                 </Link>
             </div>
 

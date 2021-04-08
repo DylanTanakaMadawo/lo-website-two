@@ -9,7 +9,7 @@ import Button from '../../../../Button/Button'
 
 const Logos = () => {
     return (
-        <div className='all-banner'>
+        <div className='all-logos'>
             <h1 className='header'>BUSINESS / PERSONAL LOGO DESIGNS</h1>
             <div className="carousel-container">
                 <Carousel infiniteLoop autoPlay>
