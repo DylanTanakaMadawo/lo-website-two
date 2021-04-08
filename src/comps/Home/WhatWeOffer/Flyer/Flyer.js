@@ -1,12 +1,14 @@
 import React from 'react'
 import Button from '../../../Button/Button'
 import './Flyer.css'
+import ImageComp from '../../../ImageComp/ImageComp'
+import flyer1 from '../../../../images/images/Flyers/flyer1.jpg'
 
 const Flyer = () => {
     return (
         <div className='flyer-section'>
-            <div className="flyer-img">
-                
+            <div className="banner-img">
+                <ImageComp img={flyer1}/>
             </div>
             <div className="flyer-card">
                 <h1>FLYERS</h1>

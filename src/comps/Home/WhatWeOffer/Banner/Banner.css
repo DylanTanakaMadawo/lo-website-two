@@ -16,17 +16,6 @@
     text-align: center;
 }
 
-.banner-img {
-    height: 50vh;
-    width: 80%;
-    border-radius: 10px;
-    margin-left: 70px;
-    background-color: red;
-    padding: 30px;
-    position: relative;
-    background: url(../../../../images/images/Banners/banner1.jpg) no-repeat center/cover;
-}
-
 .banner-card p {
     line-height: 30px;
     font-weight: 500;
@@ -39,7 +28,7 @@
     font-weight: 900;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .banner-img{
         display: none;
     }
@@ -51,5 +40,10 @@
     .banner-card p {
         font-size: 20px;
         line-height: 25px;
+        margin-left: 0;
+    }
+    .banner-section {
+        flex-direction: column;
+        margin-top: 25px;
     }
 }

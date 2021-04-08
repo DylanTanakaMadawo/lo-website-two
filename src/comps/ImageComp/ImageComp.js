@@ -1,11 +1,10 @@
 import React from 'react'
 import './ImageComp.css'
-import banner1 from '../../images/images/Banners/banner1.jpg'
 
-const ImageComp = () => {
+const ImageComp = ({ img }) => {
     return (
         <div className='img-wrapper'>
-            <img className='the-image' src={banner1} alt=""/>
+            <img className='the-image' src={img} alt=""/>
         </div>
     )
 }

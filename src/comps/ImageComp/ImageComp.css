@@ -1,8 +1,17 @@
 .img-wrapper {
     margin: 0 auto;
-    width: 100%;
+    width: 550px;
+    /* height: 100%; */
 }
 
 .the-image {
-    width: 300px;
+    width: 100%;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:800px) {
+    .the-image {
+        margin: 50px 0;
+    }
 }

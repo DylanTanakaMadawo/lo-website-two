@@ -1,6 +1,8 @@
 import React from 'react'
 import './Cards.css'
 import Button from '../../../Button/Button'
+import ImageComp from '../../../ImageComp/ImageComp'
+import card1 from '../../../../images/images/BusCards/card1.jpg'
 
 const Banner = () => {
     return (
@@ -11,7 +13,7 @@ const Banner = () => {
                 <Button path='./catalogue' label='Learn More'/>
             </div>
             <div className="cards-img">
-            
+                <ImageComp img={card1}/>
             </div>
         </div>
     )

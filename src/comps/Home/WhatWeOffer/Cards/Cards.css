@@ -16,17 +16,6 @@
     text-align: center;
 }
 
-.cards-img {
-    height: 50vh;
-    width: 80%;
-    border-radius: 10px;
-    margin-left: 70px;
-    background-color: red;
-    padding: 30px;
-    position: relative;
-    background: url(../../../../images/images/BusCards/card1.jpg) no-repeat center/cover;
-}
-
 .cards-card p {
     line-height: 30px;
     font-weight: 500;
@@ -52,5 +41,6 @@
     .cards-card p {
         font-size: 20px;
         line-height: 25px;
+        margin-left: 0;
     }
 }
